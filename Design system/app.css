@@ -1,0 +1,86 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+  padding: 0 5%;
+  background: #f7f2f2;
+}
+.componments .flex {
+  display: flex;
+  gap: 20px;
+}
+.componments .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 5%;
+}
+/* Buttons */
+.buttons button {
+  padding: 10px 20px;
+  background: none;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.buttons button i {
+  font-size: 22px;
+}
+.buttons .high {
+  background: #e63946;
+  color: #fff;
+}
+.buttons .med {
+  border: 1px solid;
+}
+.buttons .low {
+}
+.buttons .toogle {
+}
+/* Cards */
+.cards {
+}
+.cards .card {
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.cards .card img {
+  width: 100%;
+  height: 50%;
+}
+.cards .card .content {
+  padding: 15px;
+}
+.cards .card h2 {
+  margin: 0 0 10px 0;
+  font-size: 20px;
+}
+.cards .card .tags {
+  display: flex;
+  gap: 10px;
+  font-size: 10px;
+}
+.cards .card .tag {
+  padding: 5px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.cards .card p {
+  margin: 10px 0 0 0;
+  color: #777;
+}
